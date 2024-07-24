@@ -1,0 +1,15 @@
+D:\visual studio\app1\Figure\Figure\bin\Debug\net6.0\Figure.exe
+D:\visual studio\app1\Figure\Figure\bin\Debug\net6.0\Figure.deps.json
+D:\visual studio\app1\Figure\Figure\bin\Debug\net6.0\Figure.runtimeconfig.json
+D:\visual studio\app1\Figure\Figure\bin\Debug\net6.0\Figure.dll
+D:\visual studio\app1\Figure\Figure\bin\Debug\net6.0\Figure.pdb
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.csproj.AssemblyReference.cache
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.AssemblyInfoInputs.cache
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.AssemblyInfo.cs
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.csproj.CoreCompileInputs.cache
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.dll
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\refint\Figure.dll
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.pdb
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\Figure.genruntimeconfig.cache
+D:\visual studio\app1\Figure\Figure\obj\Debug\net6.0\ref\Figure.dll

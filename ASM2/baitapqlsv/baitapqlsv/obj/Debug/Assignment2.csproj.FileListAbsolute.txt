@@ -1,0 +1,12 @@
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\bin\Debug\baitapqlsv.exe.config
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\bin\Debug\baitapqlsv.exe
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\bin\Debug\baitapqlsv.pdb
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\Assignment2.csproj.AssemblyReference.cache
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\Assignment2.csproj.SuggestedBindingRedirects.cache
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\baitapqlsv.Properties.Resources.resources
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\Assignment2.csproj.GenerateResource.cache
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\Assignment2.csproj.CoreCompileInputs.cache
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\baitapqlsv.exe
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\baitapqlsv.pdb
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\baitapqlsv.login.resources
+D:\visual studio\ASM2\baitapqlsv\baitapqlsv\obj\Debug\baitapqlsv.Student.resources

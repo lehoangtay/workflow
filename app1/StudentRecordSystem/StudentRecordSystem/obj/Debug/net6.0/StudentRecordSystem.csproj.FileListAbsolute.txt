@@ -1,0 +1,15 @@
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\bin\Debug\net6.0\StudentRecordSystem.exe
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\bin\Debug\net6.0\StudentRecordSystem.deps.json
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\bin\Debug\net6.0\StudentRecordSystem.runtimeconfig.json
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\bin\Debug\net6.0\StudentRecordSystem.dll
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\bin\Debug\net6.0\StudentRecordSystem.pdb
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.csproj.AssemblyReference.cache
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.AssemblyInfoInputs.cache
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.AssemblyInfo.cs
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.csproj.CoreCompileInputs.cache
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.dll
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\refint\StudentRecordSystem.dll
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.pdb
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\StudentRecordSystem.genruntimeconfig.cache
+D:\visual studio\app1\StudentRecordSystem\StudentRecordSystem\obj\Debug\net6.0\ref\StudentRecordSystem.dll

@@ -1,0 +1,11 @@
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\bin\Debug\baitaplienketsql.exe.config
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\bin\Debug\baitaplienketsql.exe
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\bin\Debug\baitaplienketsql.pdb
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.csproj.AssemblyReference.cache
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.csproj.SuggestedBindingRedirects.cache
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.Form1.resources
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.Properties.Resources.resources
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.csproj.GenerateResource.cache
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.csproj.CoreCompileInputs.cache
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.exe
+D:\visual studio\ASM2\baitaplienketsql\baitaplienketsql\obj\Debug\baitaplienketsql.pdb

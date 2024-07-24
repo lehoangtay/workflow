@@ -1,0 +1,17 @@
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.csproj.AssemblyReference.cache
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.csproj.SuggestedBindingRedirects.cache
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.Properties.Resources.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.csproj.GenerateResource.cache
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.csproj.CoreCompileInputs.cache
+D:\visual studio\ASM2\baitapasm2\baitapasm2\bin\Debug\baitapasm2.exe.config
+D:\visual studio\ASM2\baitapasm2\baitapasm2\bin\Debug\baitapasm2.exe
+D:\visual studio\ASM2\baitapasm2\baitapasm2\bin\Debug\baitapasm2.pdb
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.exe
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.pdb
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.Login.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.Student.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.dministrator.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.Formstudent.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.FormstudentScore.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.FormAdminScore.resources
+D:\visual studio\ASM2\baitapasm2\baitapasm2\obj\Debug\baitapasm2.FormAdmin.resources

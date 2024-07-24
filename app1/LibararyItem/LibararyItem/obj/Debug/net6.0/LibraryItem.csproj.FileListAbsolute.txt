@@ -1,0 +1,15 @@
+D:\visual studio\app1\LibararyItem\LibararyItem\bin\Debug\net6.0\LibraryItem.exe
+D:\visual studio\app1\LibararyItem\LibararyItem\bin\Debug\net6.0\LibraryItem.deps.json
+D:\visual studio\app1\LibararyItem\LibararyItem\bin\Debug\net6.0\LibraryItem.runtimeconfig.json
+D:\visual studio\app1\LibararyItem\LibararyItem\bin\Debug\net6.0\LibraryItem.dll
+D:\visual studio\app1\LibararyItem\LibararyItem\bin\Debug\net6.0\LibraryItem.pdb
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.csproj.AssemblyReference.cache
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.AssemblyInfoInputs.cache
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.AssemblyInfo.cs
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.csproj.CoreCompileInputs.cache
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.dll
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\refint\LibraryItem.dll
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.pdb
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\LibraryItem.genruntimeconfig.cache
+D:\visual studio\app1\LibararyItem\LibararyItem\obj\Debug\net6.0\ref\LibraryItem.dll

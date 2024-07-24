@@ -1,0 +1,12 @@
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.csproj.AssemblyReference.cache
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.csproj.SuggestedBindingRedirects.cache
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.Form1.resources
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.Properties.Resources.resources
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.sinhvien.resources
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.csproj.GenerateResource.cache
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.csproj.CoreCompileInputs.cache
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\bin\Debug\ASM2.taylhbc00180.exe.config
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\bin\Debug\ASM2.taylhbc00180.exe
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\bin\Debug\ASM2.taylhbc00180.pdb
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.exe
+D:\visual studio\ASM2\ASM2.taylhbc00180\ASM2.taylhbc00180\obj\Debug\ASM2.taylhbc00180.pdb
