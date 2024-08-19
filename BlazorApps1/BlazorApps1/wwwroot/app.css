@@ -1,29 +1,48 @@
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+﻿/* Đặt hình nền cho phần tử main */
+main {
+    background-image: url(images/hinh2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 100vh;
+    position: relative;
 }
 
+/* Đặt màu nền cho top-row */
+.top-row.px-4 {
+    background-color: currentColor;
+}
+
+/* Đặt màu cho liên kết và nút liên kết */
 a, .btn-link {
     color: #006bb7;
 }
 
+/* Định kiểu cho nút chính */
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
 
+/* Đặt hiệu ứng khi nút và các thành phần điều khiển được focus hoặc active */
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+/* Đặt padding cho nội dung */
 .content {
     padding-top: 1.1rem;
 }
 
+/* Xóa outline cho h1 khi focus */
 h1:focus {
     outline: none;
 }
 
+/* Đặt outline cho các phần tử hợp lệ và không hợp lệ */
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }
@@ -32,20 +51,89 @@ h1:focus {
     outline: 1px solid #e50000;
 }
 
+/* Đặt màu cho tin nhắn xác thực */
 .validation-message {
     color: #e50000;
 }
 
-.blazor-error-boundary {
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;
-    padding: 1rem 1rem 1rem 3.7rem;
-    color: white;
+/* Đặt màu nền và kiểu cho phần tử header */
+.header {
+    background-color: red; /* Màu nền của header */
+    color: white; /* Màu văn bản của header */
+    padding: 10px 20px; /* Padding cho header */
+    display: flex;
+    justify-content: space-between; /* Đặt logo và menu điều hướng ở hai bên */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
+    /* Định kiểu cho liên kết logo trong header */
+    .header .logo a {
+        color: white; /* Màu văn bản của liên kết logo */
+        text-decoration: none; /* Xóa gạch chân */
+        font-size: 1.5em; /* Kích thước chữ cho logo */
     }
 
-.darker-border-checkbox.form-check-input {
-    border-color: #929292;
+    /* Định kiểu cho danh sách điều hướng trong header */
+    .header nav ul {
+        list-style: none; /* Xóa dấu chấm cho danh sách */
+        padding: 0; /* Xóa padding của danh sách */
+        margin: 0; /* Xóa margin của danh sách */
+        display: flex; /* Hiển thị các mục danh sách theo hàng ngang */
+    }
+
+        /* Đặt khoảng cách giữa các mục danh sách */
+        .header nav ul li {
+            margin-left: 20px;
+        }
+
+            /* Định kiểu cho liên kết trong danh sách điều hướng */
+            .header nav ul li a {
+                color: white; /* Màu văn bản của liên kết */
+                text-decoration: none; /* Xóa gạch chân */
+                font-size: 1em; /* Kích thước chữ của liên kết */
+            }
+
+                    /* Đặt kiểu cho liên kết khi hover */
+                    .header nav ul li a:hover {
+                        text-decoration: underline; /* Thêm gạch chân khi hover */
+                    }
+tbody, td, tfoot, th, thead, tr {
+    /* border-color: inherit; */
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
+.row > * {
+    flex-shrink: 0;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: .5rem .5rem;
+    background-color: var(--bs-table-bg);
+  margin-left: calc(var(--bs-gutter-x)* -);
+}
+dd {
+    margin-left: 0;
+    margin-bottom: auto;
+    margin-left: 2px;
+}
+.sidebar[b-56nkwup8em] {
+    background-image: none !important;
+    background-color:aquamarine;
+}
+
+.nav-item a {
+    pointer-events: auto; /* Đảm bảo các liên kết có thể được nhấp vào */
+}
+.custom-heading {
+    white-space: pre-line; /* Bảo đảm rằng ngắt dòng được xử lý */
+    text-align: left; /* Căn lề trái */
+    /* text-align: center; /* Căn giữa */
+    /* text-align: right; /* Căn lề phải */
+    margin: 0; /* Bỏ margin mặc định nếu cần */
+    padding: 1px; /* Thêm padding để tạo khoảng cách */
+}
+

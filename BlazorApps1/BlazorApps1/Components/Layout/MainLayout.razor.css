@@ -94,3 +94,37 @@ main {
         right: 0.75rem;
         top: 0.5rem;
     }
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text alignment */
+}
+
+    .footer p {
+        margin: 0; /* Remove margin */
+        font-size: 14px; /* Font size for copyright text */
+    }
+
+    .footer ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 10px 0 0; /* Margin for top of the list */
+        display: inline-block; /* Align list items horizontally */
+    }
+
+        .footer ul li {
+            display: inline; /* Display list items inline */
+            margin: 0 10px; /* Margin between list items */
+        }
+
+.footer ul li a {
+     color: #ccc; /* Link color */
+     text-decoration: none; /* Remove underline from links */
+     font-size: 14px; /* Font size for links */
+     transition: color 0.3s; /* Transition for link color change */
+}
+
+.footer ul li a:hover {
+  color: #fff; /* Link color on hover */
+}

@@ -1,0 +1,56 @@
+﻿@page "/majors/create"
+
+@using Microsoft.EntityFrameworkCore
+@using BlazorApps1.Models
+@inject IDbContextFactory<BlazorApps1.Data.ApplicationDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create</PageTitle>
+
+<h1>Create</h1>
+
+<h4>Majors</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="Majors" OnValidSubmit="AddMajors" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label> 
+                <InputText id="name" @bind-Value="Majors.Name" class="form-control" /> 
+                <ValidationMessage For="() => Majors.Name" class="text-danger" /> 
+            </div>
+            <div class="mb-3">
+                <label for="departmentid" class="form-label">Department:</label>
+                <InputSelect id="departmentid" @bind-Value="Majors.DepartmentId" class="form-control">
+                    @foreach (var department in Departments)
+                    {
+                        <option value="@department.Id">@department.Name</option>
+                    }
+                </InputSelect>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a class="btn btn-success" style="background-color:cadetblue" href="/majors">Back to List</a>
+        </EditForm>
+    </div>
+</div>
+@code {
+
+    [SupplyParameterFromForm]
+    public Majors Majors { get; set; } = new();
+    public List<Departments> Departments { get; set; } = new();
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        Departments = await context.Departments.ToListAsync();
+    }
+    // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
+    public async Task AddMajors()
+    {
+        using var context = DbFactory.CreateDbContext();
+        context.Majors.Add(Majors);
+        await context.SaveChangesAsync();
+        NavigationManager.NavigateTo("/majors");
+    }
+}

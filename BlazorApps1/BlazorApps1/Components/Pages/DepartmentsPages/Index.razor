@@ -1,24 +1,39 @@
 ﻿@page "/departments"
-
 @using Microsoft.EntityFrameworkCore
-@using Microsoft.AspNetCore.Components.QuickGrid
 @using BlazorApps1.Models
 @inject IDbContextFactory<BlazorApps1.Data.ApplicationDbContext> DbFactory
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Index Departments</PageTitle>
 
-<h1>Index</h1>
+<h1>Departments</h1>
 
 <p>
-    <a href="departments/create">Create New</a>
+    <a class="btn btn-success" href="departments/create">Create New</a>
 </p>
 
-<QuickGrid Class="table" Items="DbFactory.CreateDbContext().Department">
-    <PropertyColumn Property="departments => departments.Name" />
+@{
+    using var context = DbFactory.CreateDbContext();
+    var departments = context.Departments.ToList();
+}
 
-    <TemplateColumn Context="departments">
-        <a href="@($"departments/edit?id={departments.Id}")">Edit</a> |
-        <a href="@($"departments/details?id={departments.Id}")">Details</a> |
-        <a href="@($"departments/delete?id={departments.Id}")">Delete</a>
-    </TemplateColumn>
-</QuickGrid>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var department in departments)
+        {
+            <tr>
+                <td>@department.Name</td>
+                <td>
+                    <a class="btn btn-success" style="background-color:darkkhaki" href="@($"/departments/edit?id={department.Id}")">Edit</a>
+                    <a class="btn btn-success" style="background-color:cadetblue" href="@($"/departments/details?id={department.Id}")">Details</a>
+                    <a class="btn btn-success" style="background-color:red" href="@($"/departments/delete?id={department.Id}")">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

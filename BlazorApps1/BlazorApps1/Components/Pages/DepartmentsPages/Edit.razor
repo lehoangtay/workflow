@@ -29,15 +29,11 @@ else
                     <ValidationMessage For="() => Departments.Name" class="text-danger" />
                 </div>
                 <button type="submit" class="btn btn-primary">Save</button>
+                <a class ="btn btn-success" style="background-color:cadetblue" href="/departments">Back to List</a>
             </EditForm>
         </div>
     </div>
 }
-
-<div>
-    <a href="/departments">Back to List</a>
-</div>
-
 @code {
     [SupplyParameterFromQuery]
     public int Id { get; set; }
@@ -48,7 +44,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         using var context = DbFactory.CreateDbContext();
-        Departments ??= await context.Department.FirstOrDefaultAsync(m => m.Id == Id);
+        Departments ??= await context.Departments.FirstOrDefaultAsync(m => m.Id == Id);
 
         if (Departments is null)
         {
@@ -85,6 +81,6 @@ else
     bool DepartmentsExists(int id)
     {
         using var context = DbFactory.CreateDbContext();
-        return context.Department.Any(e => e.Id == id);
+        return context.Departments.Any(e => e.Id == id);
     }
 }

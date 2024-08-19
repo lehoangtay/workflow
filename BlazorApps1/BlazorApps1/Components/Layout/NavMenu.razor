@@ -4,7 +4,7 @@
 
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">BlazorApps1</a>
+        <h1 class="navbar-brand">THCS-THPT-BTT School</h1>
     </div>
 </div>
 
@@ -14,38 +14,62 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                <i class="fa-solid fa-house" style="margin: 5px;"></i> Home
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+                <i class="fa-solid fa-square-plus" style="margin: 5px;"></i> Counter
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+                <i class="fa-solid fa-cloud" style="margin: 5px;"></i> Weather
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="auth">
-                <span class="bi bi-lock-nav-menu" aria-hidden="true"></span> Auth Required
+                <i class="fa-solid fa-user-lock" style="margin: 5px;"></i> Auth Required
             </NavLink>
         </div>
+
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="Semesters">
                 <i class="fa-regular fa-calendar-days" style="margin: 5px;"></i> Semesters
             </NavLink>
-        </div>       
-        
+        </div>
+
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="Departments">
                 <i class="fa-regular fa-building" style="margin: 5px;"></i> Departments
             </NavLink>
         </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Majors">
+                <i class="fa-solid fa-layer-group" style="margin: 5px;"></i> Majors
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Subjects">
+                <i class="fa-solid fa-layer-group"></i> Subjects
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="students">
+                <i class="fa-solid fa-book" style="margin: 5px;"></i> Students
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Courses">
+                <i class="fa-solid fa-book" style="margin: 5px;"></i> Courses
+            </NavLink>
+        </div>
+
         <AuthorizeView>
             <Authorized>
                 <div class="nav-item px-3">
@@ -66,12 +90,12 @@
             <NotAuthorized>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="Account/Register">
-                        <span class="bi bi-person-nav-menu" aria-hidden="true"></span> Register
+                        <i class="fa-solid fa-user" style="margin: 5px;"></i> Register
                     </NavLink>
                 </div>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="Account/Login">
-                        <span class="bi bi-person-badge-nav-menu" aria-hidden="true"></span> Login
+                        <i class="fa-solid fa-id-badge" style="margin: 5px;"></i> Login
                     </NavLink>
                 </div>
             </NotAuthorized>
@@ -99,4 +123,3 @@
         NavigationManager.LocationChanged -= OnLocationChanged;
     }
 }
-

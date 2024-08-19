@@ -1,0 +1,54 @@
+﻿@page "/courses"
+
+@using Microsoft.EntityFrameworkCore
+@using BlazorApps1.Models
+@inject IDbContextFactory<BlazorApps1.Data.ApplicationDbContext> DbFactory
+
+<PageTitle>Courses</PageTitle>
+
+<h1>Courses</h1>
+
+<p>
+    <a class="btn btn-success" href="courses/create">Create New</a>
+</p>
+
+@{
+    using var context = DbFactory.CreateDbContext();
+    var courses = context.Courses
+                         .Include(c => c.Subject)
+                         .Include(c => c.Semester)
+                         .Include(c => c.Lecture)
+                         .ToList();
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Semester</th>
+            <th>Subject</th>
+            <th>Lecture</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in courses)
+        {
+            <tr>
+                <td>@course.Name</td>
+                <td>@course.StartDate.ToShortDateString()</td>
+                <td>@course.EndDate.ToShortDateString()</td>
+                <td>@course.Semester?.Name</td> <!-- Hiển thị tên Semester -->
+                <td>@course.Subject?.Name</td>
+                <td>@course.Lecture?.Name</td> <!-- Hiển thị tên Lecture -->
+                <td>
+                    <a class="btn btn-success" style="background-color:darkkhaki" href="@($"/courses/edit?id={course.Id}")">Edit</a>
+                    <a class="btn btn-success" style="background-color:cadetblue" href="@($"/courses/details?id={course.Id}")">Details</a>
+                    <a class="btn btn-success" style="background-color:red" href="@($"/courses/delete?id={course.Id}")">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

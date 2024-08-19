@@ -1,0 +1,43 @@
+﻿@page "/subjects"
+@using Microsoft.EntityFrameworkCore
+@using BlazorApps1.Models
+@inject IDbContextFactory<BlazorApps1.Data.ApplicationDbContext> DbFactory
+
+<PageTitle>Subjects</PageTitle>
+
+<h1>Subjects</h1>
+
+<p>
+    <a class="btn btn-success" href="subjects/create">Create New</a>
+</p>
+
+@{
+    using var context = DbFactory.CreateDbContext();
+    var subjects = context.Subjects.Include(s => s.Major).ToList();
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Major Name</th>
+            <th>Code</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var subject in subjects)
+        {
+            <tr>
+                <td>@subject.Name</td>
+                <td>@subject.Major?.Name</td>
+                <td>@subject.Code</td>
+                <td>
+                    <a class="btn btn-success" style="background-color:darkkhaki" href="@($"subjects/edit?id={subject.Id}")">Edit</a>
+                    <a class="btn btn-success" style="background-color:cadetblue" href="@($"subjects/details?id={subject.Id}")">Details</a>
+                    <a class="btn btn-success" style="background-color:red" href="@($"subjects/delete?id={subject.Id}")">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+﻿@page "/students"
+
+
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using Microsoft.EntityFrameworkCore
+@using BlazorApps1.Models
+@inject IDbContextFactory<BlazorApps1.Data.ApplicationDbContext> DbFactory
+<PageTitle>Manage Students</PageTitle>
+
+<h1>Manage Students</h1>
+
+<p>
+    <a href="users/create" class="btn btn-success">Create New</a>
+</p>
+
+
+<QuickGrid Class="table"
+           Items='@(DbFactory.CreateDbContext().ApplicationUser.Where(u => u.Role.Equals("Student")))'>
+
+
+    <PropertyColumn Property="users => users.Name" />
+    <PropertyColumn Property="users => users.Code" />
+    <PropertyColumn Property="users => users.PhoneNumber" />
+    <PropertyColumn Property="users => users.Email" />
+    <PropertyColumn Property="users => users.Role" />
+
+    <TemplateColumn Context="users">
+        <a href="@($"users/edit?id={users.Id}")"><i class="fa-solid fa-pen-to-square"></i></a> |
+        <a href="@($"users/details?id={users.Id}")"><i class="fa-solid fa-circle-info"></i></a> |
+        <a href="@($"users/delete?id={users.Id}")"><i class="fa-solid fa-trash"></i></a>
+    </TemplateColumn>
+</QuickGrid>
+@code
+{
+
+}

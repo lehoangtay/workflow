@@ -22,14 +22,10 @@
                 <ValidationMessage For="() => Departments.Name" class="text-danger" /> 
             </div>        
             <button type="submit" class="btn btn-primary">Create</button>
+            <a class="btn btn-success" style="background-color:cadetblue" href="/departments">Back to List</a>
         </EditForm>
     </div>
 </div>
-
-<div>
-    <a href="/departments">Back to List</a>
-</div>
-
 @code {
 
     [SupplyParameterFromForm]
@@ -39,7 +35,7 @@
     public async Task AddDepartments()
     {
         using var context = DbFactory.CreateDbContext();
-        context.Department.Add(Departments);
+        context.Departments.Add(Departments);
         await context.SaveChangesAsync();
         NavigationManager.NavigateTo("/departments");
     }

@@ -21,6 +21,18 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\visual studio\\BlazorApps1\\BlazorApps1\\wwwroot\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\banner1.jpg"
+    },
+    {
+      "Id": "D:\\visual studio\\BlazorApps1\\BlazorApps1\\wwwroot\\images\\hinh2.jpg",
+      "PackagePath": "staticwebassets\\images\\hinh2.jpg"
+    },
+    {
+      "Id": "D:\\visual studio\\BlazorApps1\\BlazorApps1\\wwwroot\\images\\photo3.jpg",
+      "PackagePath": "staticwebassets\\images\\photo3.jpg"
+    },
+    {
       "Id": "D:\\visual studio\\BlazorApps1\\BlazorApps1\\wwwroot\\lib\\font-awesome\\css\\all.css",
       "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
     },

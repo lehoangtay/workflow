@@ -1,0 +1,41 @@
+﻿@page "/majors"
+@using Microsoft.EntityFrameworkCore
+@using BlazorApps1.Models
+@inject IDbContextFactory<BlazorApps1.Data.ApplicationDbContext> DbFactory
+
+<PageTitle>Majors</PageTitle>
+
+<h1>Majors</h1>
+
+<p>
+    <a class="btn btn-success" href="majors/create">Create New</a>
+</p>
+
+@{
+    using var context = DbFactory.CreateDbContext();
+    var majors = context.Majors.Include(m => m.Department).ToList();
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Department Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var major in majors)
+        {
+            <tr>
+                <td>@major.Name</td>
+                <td>@major.Department?.Name</td>
+                <td>
+                    <a class="btn btn-success" style="background-color:darkkhaki" href="@($"/majors/edit?id={major.Id}")">Edit</a>
+                    <a class="btn btn-success" style="background-color:cadetblue" href="@($"/majors/details?id={major.Id}")">Details</a>
+                    <a class="btn btn-success" style="background-color:red" href="@($"/majors/delete?id={major.Id}")">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
